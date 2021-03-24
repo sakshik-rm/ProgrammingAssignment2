@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## 2 functions that use Lexical scoping to cache a matrix and its inverse
 
-## Write a short comment describing this function
+## This function sets the input as x in matrix format and assigns NULL to its inverse as it hasn't been computed yet.
+## It also contains getters and setters that have the matrix and its potential inverse stored in a list of elements which
+## can be accessed.
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -18,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
   }
 
 
-## Write a short comment describing this function
+## This function calculates the inverse of the inputted matrix which is assigned to 'setinverse'.
 
 cacheSolve <- function(x, ...) {
   i <- x$getinverse()
